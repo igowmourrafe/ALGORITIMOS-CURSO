@@ -1,0 +1,17 @@
+algoritmo "semnome"
+var
+
+   A , B , C , Delta: real
+inicio
+    escreva("Valor de A: ")
+   leia(A)
+   escreva("Valor de B: ")
+   leia(B)
+   escreva("Valor de C: ")
+   leia(C)
+    Delta <- (B ^ 2) - 4 * A * C
+    escreva(Delta)
+fimalgoritmo
+
+//11) Desenvolva uma lógica que leia os valores de A, B e C de uma equação do
+//segundo grau e mostre o valor de Delta.
