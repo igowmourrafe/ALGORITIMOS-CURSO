@@ -1,0 +1,40 @@
+algoritmo "semnome"
+var
+   cont , id , s , id18 , id5 , maior : inteiro
+   med : real
+inicio
+   cont <- 1
+   escreval(" .-.--.-.-.-.-.-.-.-.-.-.-.")
+   escreval("  IDENTIFICADOR DE IDADES  ")
+   escreval(" .-.--.-.-.-.-.-.-.-.-.-.-.")
+   escreval("")
+   repita
+      escreva(" IDADE  DA ",cont,"º PESSOA : ")
+      leia(id)
+      se ( id > maior ) entao
+         maior <- id
+      fimse
+      se ( id >= 18 ) entao
+         id18 <- id18 + 1
+      senao
+         se ( id <= 5 ) entao
+            id5 <- id5 + 1
+         senao
+         fimse
+      fimse
+      s <- s + id
+      cont <- cont + 1
+   ate ( cont > 10 )
+   med <- s / 10
+   escreval("")
+   escreval(" MEDIA DE IDADE: ",int(med)," ANOS")
+   escreval(" MAIORES OU IGUAL 18 ANOS : ",id18," PESSOAS")
+   escreval(" MENORES OU IGUAL 5 ANOS : ",id5," PESSOAS")
+   escreval(" MAIOR IDADE LIDA : ",maior," ANOS")
+fimalgoritmo
+
+//52) Crie um algoritmo que leia a idade de 10 pessoas, mostrando no final:
+//a) Qual é a média de idade do grupo
+//b) Quantas pessoas tem mais de 18 anos
+//c) Quantas pessoas tem menos de 5 anos
+//d) Qual foi a maior idade lida
