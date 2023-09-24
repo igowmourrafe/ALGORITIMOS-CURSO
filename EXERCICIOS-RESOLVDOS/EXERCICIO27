@@ -1,0 +1,33 @@
+algoritmo "semnome"
+var
+   N1 , N2 , Med : real
+inicio
+     escreval("---------------------------------------------------")
+     escreval("               AVALIAÇÃO BIMESTRAL                 ")
+     escreval("---------------------------------------------------")
+     escreval("")
+     escreva(" PRIMEIRA NOTA : ")
+     leia(N1)
+     escreva(" SEGUNDA NOTA : ")
+     leia(N2)
+      Med <- ( N1 + N2 ) / 2
+     escreval("")
+     escreval("----------------------------------------------")
+     escreval(" MÉDIA : ",Med)
+     se ( Med < 5 ) entao
+       escreval(" STATUS :[ REPROVADO ]")
+     senao
+        se ( Med >= 5 ) e ( Med < 7) entao
+          escreval(" STATUS :[ RECUPERAÇÃO ]")
+        senao
+          escreval(" STATUS :[ APROVADO ]")
+      fimse
+     fimse
+     escreval("----------------------------------------------")
+fimalgoritmo
+
+// 27) Crie um programa que leia duas notas de um aluno e calcule a sua média,
+//mostrando uma mensagem no final, de acordo com a média atingida:
+// - Média até 4.9: REPROVADO
+// - Média entre 5.0 e 6.9: RECUPERAÇÃO
+// - Média 7.0 ou superior: APROVADO
