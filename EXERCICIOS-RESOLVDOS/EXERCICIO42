@@ -1,0 +1,21 @@
+algoritmo "semnome"
+var
+   contador , num : inteiro
+inicio
+   contador <- 1
+   escreva(" DIGITE UM VALOR: ")
+   leia(num)
+   escreval("")
+   escreva(" CONTAGEM: ")
+   enquanto ( contador <= num ) faca
+      escreva(contador)
+      contador <- contador + 1
+   fimenquanto
+   escreval(" ACABOU!")
+   escreval("")
+fimalgoritmo
+
+//Faça um algoritmo que pergunte ao usuário um número inteiro e positivo
+//qualquer e mostre uma contagem até esse valor:
+//Ex: Digite um valor: 35
+//Contagem: 1 2 3 4 5 6 7 ... 33 34 35 Acabou
