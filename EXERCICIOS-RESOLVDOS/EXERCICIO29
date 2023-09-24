@@ -1,0 +1,45 @@
+algoritmo "semnome"
+var
+    nome : caractere
+    sal , saln : real
+    ano : inteiro
+inicio
+   escreval("---------------------------------------------")
+   escreval("            REAJUSTE DE SALARIO              ")
+   escreval("---------------------------------------------")
+   escreval("---------------------------------------------")
+   escreval("")
+   escreva(" NOME :")
+   leia(nome)
+   escreva(" SALÁRIO: ")
+   leia(sal)
+   escreva(" QUANTOS ANOS TRABALHA NA EMPRESA : ")
+   leia(ano)
+   escreval("")
+    escolha(ano)
+    caso 1 , 2 , 3
+      saln <- sal + ( sal * 3 / 100)
+      escreval(" - AUMENTO DE 3%")
+    caso 4 , 5 , 6 , 7 , 8 , 9
+       saln <- sal + ( sal * 12.5 / 100)
+       escreval(" - AUMENTO DE 12.5%")
+    outrocaso
+       saln <- sal + ( sal * 20 / 100)
+       escreval(" - AUMENTO DE 20%")
+    fimescolha
+    escreval("")
+    escreval("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
+    escreval(" SALARIO ANTIGO : ",sal)
+    escreval(" NOVO SALARIO : ",saln)
+    escreval("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
+    escreval("")
+    escreval("OBRIGADO POR FAZER PARTE DA NOSSA EMPRESA")
+    
+fimalgoritmo
+
+//29) Desenvolva um programa que leia o nome de um funcionário, seu salário,
+//quantos anos ele trabalha na empresa e mostre seu novo salário, reajustado de
+//acordo com a tabela a seguir:
+//- Até 3 anos de empresa: aumento de 3%
+//- entre 3 e 10 anos: aumento de 12.5%
+// - 10 anos ou mais: aumento de 20%
