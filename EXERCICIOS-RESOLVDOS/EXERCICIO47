@@ -1,0 +1,16 @@
+ algoritmo "semnome"
+ var
+  contador , soma : inteiro
+ inicio
+    contador <- 500
+    soma <- 0
+    enquanto ( contador >= 0 ) faca
+    escreva(contador)
+     soma <- contador + soma
+     contador <- contador -  50
+    fimenquanto
+    escreva(" = ",soma)
+ fimalgoritmo
+
+//47) Desenvolva um aplicativo que mostre na tela o resultado da expressão 500 +
+//450 + 400 + 350 + 300 + ... + 50 + 0
