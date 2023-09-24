@@ -1,0 +1,18 @@
+var
+    altura , largura , m2 ,tinta: real
+
+inicio
+   escreva("Altura da parede: ")
+   leia(altura)
+   escreva("Largura da parede: ")
+   leia(largura)
+     m2 <- largura * altura
+     tinta <- (m2 / 2)
+   escreval(" A aréa da parede é ",m2," m².")
+   escreva("É preciso de ",tinta," litros de tinta.")
+   
+fimalgoritmo
+
+// 10) Faça um algoritmo que leia a largura e altura de uma parede, calcule e
+//mostre a área a ser pintada e a quantidade de tinta necessária para o serviço,
+//sabendo que cada litro de tinta pinta uma área de 2metros quadr
