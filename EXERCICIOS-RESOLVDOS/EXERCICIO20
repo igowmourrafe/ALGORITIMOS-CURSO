@@ -1,0 +1,26 @@
+algoritmo "semnome"
+var
+   N : inteiro
+inicio
+   escreval("  -------------------------------")
+   escreval("       E AI É PAR OU IMPAR ?     ")
+   escreval("  -------------------------------")
+    escreval("")
+    escreva(" DIGITE UM NUMERO QUALQUER INTEIRO : ")
+    leia(N)
+     se ( N % 2 = 0 ) entao
+       escreval("  ________")
+       escreval(" |        |")
+       escreval(" | É PAR  |")
+       escreval(" |________|")
+     senao
+       escreval("  __________")
+       escreval(" |          |")
+       escreval(" | É IMPAR  |")
+       escreval(" |__________|")
+     fimse
+
+fimalgoritmo
+
+// 20) Desenvolva um programa que leia um número inteiro e mostre se e
+//le   PAR ouÍMPAR.
