@@ -1,0 +1,60 @@
+algoritmo "semnome"
+var
+   kg , m , imc : real
+inicio
+   escreval(" ------------------------------------------------------")
+   escreval("      IMC - CÁLCULO DO INDICE DE MASSA MUSCULAR        ")
+   escreval(" ______________________________________________________")
+   escreval("")
+   escreva(" Peso (KG) : ")
+   leia(kg)
+   escreva(" Altura (M) : ")
+   leia(m)
+   imc <- kg / ( m ^ 2)
+   escreval("")
+   escreval(" IMC: ",imc:5:2)
+   se (imc < 18) entao
+      escreval("  ________________")
+      escreval(" |                |")
+      escreval(" | ABAIXO DO PESO |")
+      escreval(" |________________|")
+   senao
+      se (imc >= 18) e (imc < 25) entao
+         escreval("  ________________")
+         escreval(" |                |")
+         escreval(" |   PESO IDEAL   |")
+         escreval(" |________________|")
+      senao
+         se (imc >= 25) e (imc < 30) entao
+            escreval("  ________________")
+            escreval(" |                |")
+            escreval(" |   SOBREPESO    |")
+            escreval(" |________________|")
+         senao
+            se (imc >= 30) e (imc < 40) entao
+               escreval("  ________________")
+               escreval(" |                |")
+               escreval(" |   OBESIDADE    |")
+               escreval(" |________________|")
+            senao
+               se (imc > 40 ) entao
+                  escreval("  ___________________")
+                  escreval(" |                   |")
+                  escreval(" | OBESIDADE MORBIDA |")
+                  escreval(" |___________________|")
+               senao
+               fimse
+            fimse
+         fimse
+      fimse
+   fimse
+fimalgoritmo
+
+// 34) O Índice de Massa Corpórea (IMC) é um valor calculado baseado na altura e no
+//peso de uma pessoa. De acordo com o valor do IMC, podemos classificar o
+//indivíduo dentro de certas faixas.
+// - abaixo de 18.5: Abaixo do peso
+//- entre 18.5 e 25: Peso ideal
+// - entre 25 e 30: Sobrepeso
+//- entre 30 e 40: Obesidade
+// - acima de 40: Obseidade mórbida
