@@ -1,0 +1,43 @@
+algoritmo "semnome"
+var
+   cont : inteiro
+   prec , maior , menor : real
+   prod , car , bar : caractere
+inicio
+   cont <- 1
+   repita
+      escreval("   ===========================================")
+      escreval("   |   VERIFICANDO VALORES MAIS: CARO/BARATO |")
+      escreval("   ===========================================")
+      escreval("")
+      escreval(" _______________________")
+      escreval("")
+      escreval(" [",cont,"º] - PRODUTO")
+      escreval(" -----------------------")
+      escreva("  PRODUTO: ")
+      leia(prod)
+      escreval(" ------------------------")
+      escreva(" PREÇO: ")
+      leia(prec)
+      se ( prec > maior ) entao
+         maior <- prec
+         car <- prod
+      fimse
+      se ( prec < menor ) ou (menor = 0) entao
+         menor <- prec
+         bar <- prod
+      fimse
+      cont <- cont + 1
+      limpatela
+   ate (cont > 8 )
+   escreval("")
+   escreval(" ---------------------------")
+   escreval(" PRODUTO MAIS CARO: ",car)
+   escreval(" VALOR: ",maior:5:2," REAIS")
+   escreval(" PRODUTO MAIS BARATO: ",bar)
+   escreval(" VALOR: ",menor:5:2," REAIS")
+   escreval(" ---------------------------")
+fimalgoritmo
+
+//51) Faça um aplicativo que leia o preço de 8 produtos. No final, mostre na
+// tela qual foi o maior e qual foi o menor preço digitados.
