@@ -1,4 +1,4 @@
 # CURSO DE ALGORITIMOS
-#### Curso em video: https://www.cursoemvideo.com/
+#### Curso em video: <a href="https://www.cursoemvideo.com/"target"">
 
 Repositório destinado para guardar e disponibilizar a resolução dos exercicios propostos  pelo Profº Gustavo Guanabara do Curso de Algoritmos na plataforma Curso em Video.
