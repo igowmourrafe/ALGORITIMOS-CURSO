@@ -1,0 +1,39 @@
+algoritmo "semnome"
+var
+     L , C, Mq :real
+inicio
+    escreval(" ---------------------------------------------")
+    escreval("|CLASSIFICADOR DE TERRENOS: POPULAR/MASTER/VIP|")
+    escreval(" ---------------------------------------------")
+    escreval("")
+    escreva(" LARGURA : ")
+    leia(L)
+    escreva(" COMPRIMENTO : ")
+    leia(C)
+     Mq <- ( L * C )
+    escreval("")
+    escreval(" ______________________")
+    escreval("                       ")
+    escreval("  TERRENO : ",Mq,"m²       ")
+      se ( Mq < 100 ) entao
+        escreval("  TERRENO POPULAR      ")
+      senao
+        se ( Mq >= 100 ) e ( Mq < 500 ) entao
+          escreval ("  TERRENO MASTER ")
+        senao
+          se ( Mq >= 500 ) entao
+            escreval("  TERRENO VIP ")
+          senao
+          fimse
+        fimse
+      fimse
+    escreval(" ______________________")
+
+fimalgoritmo
+
+//28) Faça um programa que leia a largura e o comprimento de um terreno
+//retangular, calculando e mostrando a sua área em m². O programa também
+//devemostrar a classificação desse terreno, de acordo com a lista abaixo:
+// - Abaixo de 100m² = TERRENO POPULAR
+// - Entre 100m² e 500m² = TERRENO MASTER
+ //- Acima de 500m² = TERRENO VIP
