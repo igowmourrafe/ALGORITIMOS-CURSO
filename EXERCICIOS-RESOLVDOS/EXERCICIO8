@@ -1,0 +1,34 @@
+algoritmo "distancia"
+var
+Dis : real
+km , hm , dam ,dm , cm , mm: real
+inicio
+escreva("Digite uma distância em metros: ")
+leia(Dis)
+escreval("A distância de ",Dis," corresponde a:")
+ km <- (Dis / 1000)
+ hm <- (Dis * 100)
+ dm <- (Dis * 1000)
+ cm <- (Dis * 10000)
+ mm <- (Dis * 100000)
+ dam <- (Dis /10)
+escreval(km," km")
+escreval(hm," hm")
+escreval(dam," dam")
+escreval(cm," cm")
+escreval(mm," mm")
+escreval(dm," dam")
+fimalgoritmo
+
+//8) Desenvolva um programa que leia uma distância em metros e mostre
+//os valores
+//relativos em outras medidas.
+//Ex:
+//Digite uma distância em metros: 185.72
+//A distância de 85.7m corresponde a:
+//0.18572Km
+//1.8572Hm
+//18.572Dam
+//1857.2dm
+//18572.0cm
+//185720.0mm
