@@ -1,0 +1,13 @@
+algoritmo "semnome"
+var
+   preco, Des: real
+inicio
+   escreva("Preço do produto : ")
+   leia(preco)
+    Des <- (preco * 5) / 100
+    Des <- preco - Des
+   escreva("PREÇO PROMOCIONAL COM 5% DE DESCONTO:",Des," REAIS. ")
+fimalgoritmo
+
+//12) Crie um programa que leia o preço de um produto, calcule e mostre o seu
+//PREÇO PROMOCIONAL, com 5% de descont
