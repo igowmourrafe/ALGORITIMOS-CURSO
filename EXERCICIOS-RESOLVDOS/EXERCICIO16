@@ -1,0 +1,27 @@
+algoritmo "semnome"
+var
+      q_cig , q_anos , dia , temp, vid:real
+inicio
+      escreval("---------------------------------------")
+      escreval("              [ DESAFIO ]              ")
+      escreval("---------------------------------------")
+      escreval(" Calculando a redução do tempo de vida de um fumante")
+      escreval("____________________________________________________")
+      escreva(" DIGITE A QUANTIDADE DE CIGARROS FUMADOS POR DIA: ")
+      leia(q_cig)
+      escreva(" QUANTOS ANOS VOCE JA FUMOU: ")
+      leia(q_anos)
+        q_anos <- (q_anos * 365)
+        dia <- (q_cig * 10)
+        temp <- (q_anos * dia)
+        vid <- (temp / 1440)
+     // escreva(q_anos)
+     // escreva(dia)
+    //  escreva(temp)
+      escreva("Voce perdera ", int(vid)," dias de vidas")
+fimalgoritmo
+
+//16) [DESAFIO] Escreva um programa para calcular a redução do tempo de vida
+// de um fumante. Pergunte a quantidade de cigarros fumados por dias e quantos anos ele
+//já fumou. Considere que um fumante perde 10 min de vida a cada cigarro.
+//Calcule quantos dias de vida um fumante perderá e exiba o total em dias.
