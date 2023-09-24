@@ -1,0 +1,30 @@
+  algoritmo "MEDIA"
+  var
+      N1 , N2 , Med:real
+      mate, nome:caractere
+      aprov , reprov: logico
+  inicio
+   escreva("Qual o seu Nome? ")
+   leia(nome)
+   escreva("Qual a materia? ")
+   leia(mate)
+   escreva("Nota 1: ")
+   leia(N1)
+   escreva("Nota 2: ")
+   leia(N2)
+     Med <- (N1 + N2)/ 2
+     aprov <- (med >= 6)
+     reprov <- (med <= 6)
+     escreva("O aluno ", nome ," na materia de ",mate ," tirou notas ",N1)
+     escreval(" e ",N2," , a média ficou ", Med," assim sendo o mesmo esta:")
+     escreval("APROVADO:", aprov)
+     escreval("REPROVADO:", reprov)
+     
+  fimalgoritmo
+
+// 5) Faça um programa que leia as duas notas de um aluno em uma matéria e mostre
+// na tela a sua média na disciplina.
+//  Ex:
+// Nota 1: 4.5
+// Nota 2: 8.5
+// A média entre 4.5 e 8.5 é igual a 6.5
