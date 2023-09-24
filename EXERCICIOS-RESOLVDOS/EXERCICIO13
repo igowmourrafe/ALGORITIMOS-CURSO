@@ -1,0 +1,14 @@
+algoritmo "semnome"
+var
+      salario_atual , aumento: real
+
+inicio
+   escreva(" Salário atual do funcionário: ")
+   leia(salario_atual)
+    aumento <- (salario_atual * 15)/ 100
+    aumento <- salario_atual + aumento
+   escreva(" Seu novo salário, com 15% de aumento é de ",aumento," reais.")
+fimalgoritmo
+
+//13) Faça um algoritmo que leia o salário de um funcionário, calcule e mostre o
+//seu novo salário, com 15% de aumento.
