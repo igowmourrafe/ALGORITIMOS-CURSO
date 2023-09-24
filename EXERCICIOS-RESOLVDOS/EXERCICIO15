@@ -1,0 +1,14 @@
+algoritmo "semnome"
+var
+  dias , salario : real
+inicio
+   escreva(" Dias trabalhado no mes de junho: ")
+   leia(dias)
+    salario <- dias * (8 * 25)
+    escreva("Salário do funcionário é de ",salario," reais.")
+    
+fimalgoritmo
+
+//15) Crie um programa que leia o número de dias trabalhados em um mês e mostre o
+//salário de um funcionário, sabendo que ele trabalha 8 horas por dia e ganha R$25
+//por hora trabalhada.
