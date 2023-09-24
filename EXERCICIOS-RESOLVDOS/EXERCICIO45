@@ -1,0 +1,31 @@
+algoritmo "semnome"
+var
+   vali , valf , incr : inteiro
+inicio
+   escreva(" Digite o primeiro Valor: ")
+   leia(vali)
+   escreva(" Digite o último Valor: ")
+   leia(valf)
+   escreva(" Digite o incremento: ")
+   leia(incr)
+   escreval("")
+   se ( vali < valf ) entao
+      enquanto (vali <= valf ) faca
+         escreva(vali)
+         vali <- vali + incr
+      fimenquanto
+   senao
+      se ( vali > valf ) entao
+         enquanto (valf <= vali ) faca
+            escreva(vali)
+            vali <- vali - incr
+         fimenquanto
+      senao
+      fimse
+   fimse
+   escreval(" ACABOU!")
+fimalgoritmo
+
+//45) O programa acima vai ter um problema quando digitarmos o primeiro valor
+//maior que o último. Resolva esse problema com um código que funcione em qualquer
+//situação..
