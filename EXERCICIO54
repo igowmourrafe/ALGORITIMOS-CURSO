@@ -1,0 +1,45 @@
+algoritmo "semnome"
+var
+   cont : inteiro
+   P , A , meda , sa , p90, p51 , p1001: real
+inicio
+   cont <- 1
+   escreval(" -----------------------------------------------")
+   escreval("       VERIFICADO   / PESO /  / ALTURA /        ")
+   escreval(" -----------------------------------------------")
+   repita
+      escreval("")
+      escreval(cont, "º PESSOA")
+      escreval("")
+      escreva(" PESO: ")
+      leia(P)
+      escreva(" ALTURA: ")
+      leia(A)
+      sa <- sa + A
+      se ( P > 90 ) entao
+         p90 <- p90 + 1
+      fimse
+      se ( P < 50 ) e ( A < 1.60 ) entao
+         p51 <- p51 + 1
+      fimse
+      se ( P > 100 ) e ( A > 1.90 ) entao
+         p1001 <- p1001 + 1
+      fimse
+      cont <- cont +  1
+   ate ( cont > 7 )
+   meda <- sa / 7
+   escreval("")
+   escreval("-----------------------------------------------")
+   escreval(" MÉDIA DE ALTURA: ",meda:5:2)
+   escreval(" PESSOAS ACIMA DE 90KG: ",p90)
+   escreval(" PESSOAS ABAIXO DE 50KG E MENOR QUE 1.60M: ",p51)
+   escreval(" PESSOAS ACIMA DE 100KG E MAIOR QUE 1.90M: ",p1001)
+   escreval("-----------------------------------------------")
+fimalgoritmo
+
+//54) Desenvolva um aplicativo que leia o peso e a altura de 7 pessoas,
+//mostrando no final:
+//a) Qual foi a média de altura do grupo
+//b) Quantas pessoas pesam mais de 90Kg
+//c) Quantas pessoas que pesam menos de 50Kg tem menos de 1.60m
+//d) Quantas pessoas que medem mais de 1.90m pesam mais de 100Kg.
