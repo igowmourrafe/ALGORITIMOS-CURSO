@@ -1,0 +1,38 @@
+algoritmo "semnome"
+var
+      nasc , ano , idade , antes , depois : inteiro
+inicio
+     escreval(" -------------------------------------")
+     escreval("           ALISTAMENTO MILITAR        ")
+     escreval(" -------------------------------------")
+     escreval("")
+        escreva(" Ano de Nascimento : ")
+        leia(nasc)
+        escreva(" Ano Atual : ")
+        leia(ano)
+          idade <- ( ano - nasc )
+          antes <- ( 18 - idade )
+          depois <- (idade - 18 )
+        escreval("")
+        escreval("_______________________ ")
+        escreval("")
+        escreval(" IDADE : ",idade," ANOS")
+        escreval("_______________________")
+        se ( idade < 18) entao
+           escreval("")
+           escreval("Faltam ",antes," ano(s) para o alistamento.")
+           escreval("")
+        senao
+           escreval("")
+           escreval("Já se passaram ",depois," ano(s) para o alistamento.")
+           escreval("")
+        fimse
+
+fimalgoritmo
+
+//22) Escreva um programa que leia o ano de nascimento de um rapaz e mostre a
+// suasituação em relação ao alistamento militar.
+ //- Se estiver antes dos 18 anos, mostre em quantos anos faltam para o
+//alistamento.
+ //- Se já tiver depois dos 18 anos, mostre quantos anos já se passaram do
+//alistamento.
