@@ -1,0 +1,34 @@
+algoritmo "semnome"
+var
+ L1 , L2 ,L3 : real
+ Tri : logico
+inicio
+  escreval(" DIGITE OS TAMANHOS DOS SEGUINTES LADOS DE UM TRIANGULO")
+  escreval("_______________________________________________________")
+  escreval("")
+    escreva(" LADO 1: ")
+    leia(L1)
+    escreva(" LADO 2: ")
+    leia(L2)
+    escreva(" LADO 3: ")
+    leia(L3)
+      Tri <- (L1 < L1 + L2 ) e (L2 < L1 + L3) e (L3 < L1 + L2)
+      escreval("")
+      escreval(Tri)
+      se ( Tri = verdadeiro ) entao
+       escreval("")
+       escreval(" ===============================")
+       escreval("        É UM TRIANGULO          ")
+       escreval(" ===============================")
+      senao
+       escreval("")
+      escreval(" ===============================")
+      escreval("       NÃO É UM TRIANGULO       ")
+      escreval(" ===============================")
+      fimse
+fimalgoritmo
+
+//25) [DESAFIO] Crie um programa que leia o tamanho de três segmentos de reta.
+//Analise seus comprimentos e diga se é possível formar um triângulo com essas
+//retas. Matematicamente, para três segmentos formarem um triângulo, o comprimento
+//de cada lado deve ser menor que a soma dos outros dois.
