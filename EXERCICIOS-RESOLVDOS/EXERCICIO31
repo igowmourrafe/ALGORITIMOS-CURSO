@@ -1,0 +1,92 @@
+algoritmo "semnome"
+var
+   J1 , J2  : inteiro
+inicio
+   escreval(" ______________________________")
+   escreval("|                              |")
+   escreval("| JoKenPo (Pedra-Papel-Tesoura |")
+   escreval("|______________________________|")
+   escreval("")
+   escreval(" DIGITE UMA OPÇÃO :")
+   escreval("")
+   escreva(" [1] - [ PEDRA ]")
+   escreva(" [2] - [ PAPEL ]")
+   escreval(" [3] - [ TESOURA ]")
+   escreval("")
+   escreva(" JOGADOR 1: ")
+   leia(J1)
+   escreva(" JOGADOR 2: ")
+   leia(J2)
+   escreval("")
+   escreval("________________________________________________")
+   escreval("")
+   se ( J1 =  1 ) e ( J2 = 1 ) entao
+      escreval(" HOUVE UM EPATE ")
+      escreval(" - PEDRA V PEDRA ")
+   senao
+      se ( J1 =  1 ) e ( J2 = 2 ) entao
+         escreval(" O VENCEDOR É O JOGADOR 2 ")
+         escreval(" - PAPEL VENCE PEDRA ")
+      senao
+         se ( J1 =  1 ) e ( J2 = 3 ) entao
+            escreval(" O VENCEDOR É O JOGADOR 1 ")
+            escreval(" - PEDRA VENCE TESOURA ")
+         senao
+            se ( J1 =  2 ) e ( J2 = 1 ) entao
+               escreval(" O VENCEDOR É O JOGADOR 1 ")
+               escreval(" - PAPEL VENCE PEDRA ")
+            senao
+               se ( J1 =  2 ) e ( J2 = 2 ) entao
+                  escreval(" HOUVE UM EMPATE ")
+                  escreval(" - PEDRA VS PEDRA ")
+               senao
+                  se ( J1 =  2 ) e ( J2 = 3 ) entao
+                     escreval(" O VENCEDOR É O JOGADOR 2 ")
+                     escreval(" - TESOURA VENCE PAPEL ")
+                  senao
+                     se ( J1 =  3 ) e ( J2 = 1 ) entao
+                        escreval(" O VENCEDOR É O JOGADOR 2 ")
+                        escreval(" - PEDRA VENCE TESOURA")
+                     senao
+                        se ( J1 =  3 ) e ( J2 = 2 ) entao
+                           escreval(" O VENCEDOR É O JOGADOR 1 ")
+                           escreval(" - TESOURA  VENCE PAPEL ")
+                        senao
+                           se ( J1 =  3 ) e ( J2 = 3 ) entao
+                              escreval(" HOUVE UM EMPATE ")
+                              escreval(" - TESOURA VS TESOURA ")
+                           senao
+
+                           fimse
+                        fimse
+                     fimse
+                  fimse
+               fimse
+            fimse
+         fimse
+      fimse
+   fimse
+     escolha(J1)
+     caso 0
+     escreval(" RESPOSTA EM BRANCO DO JOGADOR 1")
+     caso 1
+     caso 2
+     caso 3
+     outrocaso
+     escreval(" JOGADOR 1 DIGITOU OPÇÃO INVALIDA")
+     fimescolha
+     escolha(J2)
+     caso 0
+     escreval(" RESPOSTA EM BRANCO DO JOGADOR 2")
+     caso 1
+     caso 2
+     caso 3
+     outrocaso
+     escreval(" JOGADOR 2 DIGITOU OPÇÃO INVALIDA")
+     fimescolha
+   escreval("")
+   escreval("________________________________________________")
+
+fimalgoritmo
+
+//31) [DESAFIO] Crie um jogo de JoKenPo (Pedra-Papel-Tesoura)
