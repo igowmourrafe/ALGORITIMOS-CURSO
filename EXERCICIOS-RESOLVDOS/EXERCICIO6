@@ -1,0 +1,19 @@
+ algoritmo "anteesucess"
+ var
+  N1: inteiro
+  ant , suc: inteiro
+ inicio
+ escreva("Digite um número :")
+ leia(N1)
+  ant <- (N1 - 1)
+  suc <- (N1 + 1)
+  escreval("O antecessor de ",N1," é ",ant)
+  escreval("O sucessor de ",N1," é ",suc)
+ fimalgoritmo
+
+//6) Faça um programa que leia um número inteiro e mostre o seu antecessor e seu
+//sucessor.
+//Ex:
+//Digite um número: 9
+//O antecessor de 9 é 8
+//O sucessor de 9 é 10
