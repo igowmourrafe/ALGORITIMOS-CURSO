@@ -1,0 +1,49 @@
+algoritmo "semnome"
+var
+   hr : inteiro
+   pontos , Fat : real
+inicio
+ escreval(" ----------------------------------------------")
+ escreval("       CONVERSOR DE PONTOS EM DINHEIRO         ")
+ escreval(" $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ ")
+ escreval("")
+
+ escreval(" |QUANTAS HORA(S) DE ATIVIDADES FÍSICA NO MÊS|")
+ escreval("")
+ escreval(" [1] - ATÉ 10 HORAS")
+ escreval(" [2} - ENTRE 11 HORAS ATÉ 20")
+ escreval(" [3] - ACIMA DE 20 HORAS")
+ escreval("")
+ escreva(" DIGITE UMA OPÇÃO: ")
+ leia(hr)
+  escolha(hr)
+  caso 1
+   escreva(" HORAS : ")
+   leia(hr)
+   pontos <- hr * 2
+   Fat <- pontos * 0.5
+  caso 2
+   escreva(" HORAS : ")
+   leia(hr)
+   pontos <- hr * 5
+   Fat <- pontos * 0.5
+  caso 3
+   escreva(" HORAS : ")
+   leia(hr)
+   pontos <- hr * 10
+   Fat <- pontos * 0.5
+  outrocaso
+   escreval(" OPÇÃO INVALIDA ")
+  fimescolha
+  escreval("")
+  escreval("QUANTIDADES DE PONTOS: ",pontos)
+  escreval("DINHEIRO FATURADO: ",Fat:5:2)
+fimalgoritmo
+
+//36) Um programa de vida saudável quer dar pontos atividades físicas que podem
+//ser trocados por dinheiro. O sistema funciona assim:
+// - Cada hora de atividade física no mês vale pontos
+// - até 10h de atividade no mês: ganha 2 pontos por hora
+// - de 10h até 20h de atividade no mês: ganha 5 pontos por hora
+// - acima de 20h de atividade no mês: ganha 10 pontos por hora
+// - A cada ponto ganho, o cliente fatura R$0,05 (5 centavos)
