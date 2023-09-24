@@ -1,0 +1,28 @@
+algoritmo "semnome"
+var
+  ano : inteiro
+inicio
+ escreval("   ------------------------------------")
+ escreval("   VERIFICADOR SE ANO É BISSEXTO OU NÃO")
+ escreval("   ------------------------------------")
+ escreva(" DIGÍTE O ANO : ")
+ leia(ano)
+  se ( ano % 4 = 0 ) entao
+    escreval("")
+    escreval("-  O ANO DE ",ano,"  TEM 366 DIAS  -")
+    escreval("  ______________")
+    escreval(" |              |")
+    escreval(" | ANO BISSEXTO |")
+    escreval(" |______________|")
+  senao
+    escreval("")
+    escreval("-  O ANO DE ",ano,"  TEM 365 DIAS  -")
+    escreval("  ________________")
+    escreval(" |                |")
+    escreval(" | NÃO E BISSEXTO |")
+    escreval(" |________________|")
+  fimse
+fimalgoritmo
+
+//21) Faça um algoritmo que leia um determinado ano e mostre se ele é ou não
+//BISSEXTO.
