@@ -1,0 +1,18 @@
+ algoritmo "tercaparte"
+ var
+  N1 , dob, ter: real
+ inicio
+ escreva("Digite um número :")
+ leia(N1)
+  dob <- (N1 * 2)
+  ter <- (N1 / 3)
+  escreval("O dobro de ",N1," é ",dob)
+  escreval("A terça parte de ",N1," é ", ter)
+ fimalgoritmo
+
+//7) Crie um algoritmo que leia um número real e mostre na tela o seu dobro e a
+//sua terça parte.
+//Ex:
+//Digite um número: 3.5
+//O dobro de 3.5 é 7.0
+//A terça parte de 3.5 é 1.16666
