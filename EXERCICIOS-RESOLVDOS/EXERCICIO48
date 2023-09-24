@@ -1,0 +1,20 @@
+algoritmo "semnome"
+var
+   num , contador , soma: inteiro
+inicio
+   contador <- 1
+   soma <- 0
+   escreval(" SOMANDO 7 NUMEROS INTEIROS ")
+   escreval("")
+   enquanto ( contador <= 7 ) faca
+      escreva(" DIGITE O ",contador,"º NUMERO: ")
+      leia(num)
+      soma <- soma + num
+      contador <- contador + 1
+   fimenquanto
+   escreval("")
+   escreval(" A SOMA ENTRE OS NUMEROS: ",soma)
+fimalgoritmo
+
+//48) Faça um programa que leia 7 números inteiros e no final mostre o
+//somatório entre el
