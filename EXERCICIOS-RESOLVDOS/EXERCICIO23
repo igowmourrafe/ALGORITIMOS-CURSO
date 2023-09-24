@@ -1,0 +1,44 @@
+algoritmo "semnome"
+var
+  nome : caractere
+  sexo : inteiro
+  V , desh , desm : real
+inicio
+  escreval("------------------------------------------")
+  escreval("          MARISA - DIA DA MULHER          ")
+  escreval("------------------------------------------")
+  escreval("")
+     escreva(" Digite seu nome: ")
+     leia(nome)
+     escreva(" Digite seu sexo:[1] - MASCULINO | [2] - FEMININO : ")
+     leia(sexo)
+     escreval("")
+     escreva(" Valor das compras: ")
+     leia(V)
+      desh <- ( V * 5) / 100
+      desh <- (v - desh)
+      desm <- ( V * 13) / 100
+      desm <- (v - desm)
+     se ( sexo = 1 ) entao
+      escreval("")
+      escreval("- Homens ganham 5% de desconto -")
+      escreval("_________________________________________________")
+      escreval("")
+      escreval("SUA COMPRA APÓS DESCONTO FICOU ",desh:5:2," REAIS")
+      escreval("_________________________________________________")
+     senao
+     escreval("")
+      escreval("- Mulheres ganham 13% de desconto -")
+      escreval("_________________________________________________")
+      escreval("")
+      escreval("SUA COMPRA APÓS DESCONTO FICOU ",desm:5:2," REAIS")
+      escreval("_________________________________________________")
+     fimse
+fimalgoritmo
+
+//23) Numa promoção exclusiva para o Dia da Mulher, uma loja quer dar descontos
+//para todos, mas especialmente para mulheres. Faça um programa que leia nome,
+//sexo e o valor das compras do cliente e calcule o preço com desconto. Sabendo
+//que:
+// - Homens ganham 5% de desconto
+// - Mulheres ganham 13% de desconto
