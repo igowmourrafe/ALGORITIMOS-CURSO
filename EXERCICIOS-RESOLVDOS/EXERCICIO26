@@ -1,0 +1,31 @@
+algoritmo "semnome"
+var
+   N1 , N2 : INTEIRO
+inicio
+   escreval("-------------------------------------------------")
+   escreval("              VERIFICADOR DE NUMEROS             ")
+   escreval("_________________________________________________")
+   escreval("")
+   escreva(" DIGITE UM NUMERO : ")
+   leia(N1)
+   escreva(" DIGITE OUTRO NUMERO : ")
+   leia(N2)
+   escreval("")
+   escreval("-------------------------------------------------")
+   se( N1 > N2 )entao
+      escreval(" - O PRIMEIRO VALOR É MAIOR ")
+   senao
+      se( N2 > N1 ) entao
+         escreval("  - O SEGUNDO VALOR É MAIOR ")
+      senao
+         escreval(" - NÃO EXISTE VALOR MAIOR , OS DOIS SÃO IGUAIS")
+      fimse
+   fimse
+   escreva("-------------------------------------------------")
+fimalgoritmo
+
+//26) Escreva um algoritmo que leia dois números inteiros e compare-os,
+//mostrando na tela uma das mensagens abaixo:
+// - O primeiro valor é o maior
+// - O segundo valor é o maior
+//- Não existe valor maior, os dois são iguais
