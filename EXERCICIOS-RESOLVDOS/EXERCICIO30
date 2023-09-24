@@ -1,0 +1,38 @@
+algoritmo "semnome"
+var
+   L1 , L2 ,L3 : real
+   Tri : logico
+inicio
+   escreval(" DIGITE OS TAMANHOS DOS SEGUINTES LADOS DE UM TRIANGULO")
+   escreval("_______________________________________________________")
+   escreval("")
+   escreva(" LADO 1: ")
+   leia(L1)
+   escreva(" LADO 2: ")
+   leia(L2)
+   escreva(" LADO 3: ")
+   leia(L3)
+   Tri <- (L1 < L1 + L2 ) e (L2 < L1 + L3) e (L3 < L1 + L2)
+   escreval("")
+   escreval("")
+   escreval("---------------------------------------------------")
+   se ( L1 = L2) e (L2 = L3 ) e ( L3 = L1 )entao
+      escreval(" - EQUILÁTERO: todos os lados iguais")
+   senao
+      se (L1 = L2) ou (L1 = L3) ou (L3 = L2) entao
+         escreval(" - ISÓSCELES: dois lados iguais")
+      senao
+         se ( L1 <> L2 ) e ( L2 <> L3 ) e ( L3 <> L1) entao
+            escreval(" - ESCALENO: todos os lados diferentes")
+         senao
+         fimse
+      fimse
+   fimse
+    escreval("---------------------------------------------------")
+fimalgoritmo
+
+//30) [DESAFIO] Refaça o algoritmo 25, acrescentando o recurso de mostrar que tipo
+//de triângulo será formado:
+//- EQUILÁTERO: todos os lados iguais
+//- ISÓSCELES: dois lados iguais
+//- ESCALENO: todos os lados diferentes
