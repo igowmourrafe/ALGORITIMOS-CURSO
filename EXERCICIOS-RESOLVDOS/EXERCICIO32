@@ -1,0 +1,47 @@
+algoritmo "semnome"
+var
+   casa , sal, sal30 , parc: real
+   ano , total_parc  : inteiro
+inicio
+   escreval("   -------------------------------------------")
+   escreval("               CRÉDITO IMOBILIARIO            ")
+   escreval("   -------------------------------------------")
+   escreval("")
+   escreva(" Valor da casa:")
+   leia(casa)
+   escreva(" Salário : ")
+   leia(sal)
+   escreva(" Em quantos anos deseja pagar o imovel : ")
+   leia(ano)
+   sal30 <- (sal * 30 ) / 100
+   total_parc <- ano * 12
+   parc <- (casa / total_parc )
+   escreval("")
+   escreval("")
+   se (parc >= Sal30) entao
+      escreval(" CREDITO NEGADO")
+      escreval("_____________________")
+      escreval("")
+      escreva(" DEVIDO O VALOR DAS PARCELAS ULTRAPASAREM MAIS DE 30% DO SEU SALARIO")
+      escreva(" NÃO PODEMOS LIBERAR SEU CREDITO, ORIENTAMOS QUE TENTE NOVAMENTE POR")
+      escreval("ÉM COM O PARCELAMENTO MAIS ESTENDIDO.")
+      escreval("--------------------------------------------------")
+      escreval(" VALOR DAS PARCELAS: ",parc:5:2," reais")
+      escreval(" SALÁRIO INFORMADO (30%): ",sal30:5:2," reais")
+      escreval("--------------------------------------------------")
+   senao
+      se (parc < Sal30) entao
+         escreval(" CREDITO APROVADO")
+         escreval("--------------------------------------------------")
+         escreval(" VALOR DAS PARCELAS: ",parc:5:2," reais")
+         escreval(" TOTAL DE PARCELAS: ",total_parc," PARCELAS")
+         escreval(" SALÁRIO INFORMADO (30%): ",sal30:5:2," reais")
+         escreval("--------------------------------------------------")
+      Fimse
+   Fimse
+fimalgoritmo
+
+//32) Escreva um programa para aprovar ou não o empréstimo bancário para a compra
+//de uma casa. O programa vai perguntar o valor da casa, o salário do comprador e
+//em quantos anos ele vai pagar. Calcule o valor da prestação mensal, sabendo que
+//ela não pode exceder 30% do salário ou então o empréstimo será negado.
