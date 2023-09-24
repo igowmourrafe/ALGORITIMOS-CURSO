@@ -1,0 +1,21 @@
+algoritmo "semnome"
+var
+    nome : caractere
+    n1 , n2 , med : real
+inicio
+   escreva(" DIGITE SEU NOME: ")
+   leia(nome)
+   escreva(" PRIMEIRA NOTA: ")
+   leia(n1)
+   escreva(" SEGUNDA NOTA: ")
+   leia(n2)
+     med <- ( n1 + n2 ) / 2
+   se ( med >= 7 ) entao
+   escreval("ALUNO : ",nome,)
+   escreval("---APROVADO---")
+   escreval("A MÉDIA FOI ",med,)
+fimalgoritmo
+
+//19) Crie um algoritmo que leia o nome e as duas notas de um aluno, calcule a sua
+//média e mostre na tela. No final, analise a média e mostre se o aluno teve ou
+//não um bom aproveitamento (se ficou acima da média 7.0).
