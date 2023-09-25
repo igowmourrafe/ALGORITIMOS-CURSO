@@ -1,0 +1,48 @@
+algoritmo "semnome"
+var
+   cont , n , s , menor , par , qn: inteiro
+   resp : caractere
+   med : real
+inicio
+   escreval("")
+   escreval(" | VERIFICANDO VALORES COM ESTRUTURA DE REPTIÇÃO |")
+   escreval("  “faça enquanto” “faça enquanto” “faça enquanto”")
+   escreval(" -------------------------------------------------")
+   escreval("")
+   enquanto ( resp <> "N" ) faca
+      escreva(" DIGITE UM NUMERO: ")
+      leia(n)
+      escreva("   DESEJA CONTINUAR:[S/N]: ")
+      leia(resp)
+      se ( n < menor ) ou ( menor = 0) entao
+         menor <- n
+      fimse
+      se ( n % 2 = 0 ) entao
+         par <- par + 1
+      fimse
+      s <- s + n
+      se ( n > 0) entao
+       qn <- qn + 1
+      fimse
+      cont <- cont 1
+   fimenquanto
+   med <- s / qn
+   escreval("")
+   escreval(" -------------------------------------")
+   escreval(" SOMATÓRIO ENTRE TODOS OS VALORES: ",s)
+   escreval(" -------------------------------------")
+   escreval(" MENOR VALOR DIGITADO: ", menor)
+   escreval(" -------------------------------------")
+   escreval(" MÉDIA ENTRE TODOS OS VALORES: ",int(med))
+   escreval(" -------------------------------------")
+   escreval(" VALORES PARES: ", par)
+   escreval(" -------------------------------------")
+fimalgoritmo
+
+//63) Crie um programa usando a estrutura “faça enquanto” que leia vários
+//números. A cada laço, pergunte se o usuário quer continuar ou não. No
+//final, mostre na tela:
+//a) O somatório entre todos os valores
+//b) Qual foi o menor valor digitado
+//c) A média entre todos os valores
+//d) Quantos valores são pares
