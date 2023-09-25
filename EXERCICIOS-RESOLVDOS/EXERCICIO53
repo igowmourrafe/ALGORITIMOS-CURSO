@@ -1,0 +1,51 @@
+algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi
+var
+   cont , id , h , m , totid, id20: inteiro
+   sexo : caractere
+   medgrup , medh : real
+inicio
+   cont <- 1
+   escreval("  _________________________________________")
+   escreval("")
+   escreval("        CADASTRO DE IDADE / SEXO         ")
+   escreval("  _________________________________________")
+   repita
+      escreval("")
+      escreval(cont,"º PESSOA")
+      escreva(" IDADE: ")
+      leia(id)
+      escreva(" SEXO[M/F]: ")
+      leia(sexo)
+      se ( sexo = "M") então
+         h <- h + 1
+         medh <- medh + id
+      senao
+         m <- m + 1
+      fimse
+      se (id > 20) e (sexo = "f") entao
+         20 <- id20 + 1
+      fimse
+      totid <- totid + id
+      cont <- cont + 1
+   ate ( cont > 1 )
+   medgrup <- totid / 1
+   medh <- medh / h
+   escreval("")
+   escreval("--------------------------------------------")
+   escreval(" HOMENS CADASTRADOS: ",h)
+   escreval(" MULHERES CADASTRADAS: ",m)
+   escreval(" MÉDIA DE IDADE: ",int(medgrup)," ANOS")  
+   escreval(" MÉDIA DE IDADE DOS HOMENS: ",int(medh)," ANOS")
+   / escreval(" MULHERES COM MAIS DE 20 ANOS: ",id20)
+   escreval("--------------------------------------------")
+fimalgoritmo
+
+//53) Faça um programa que leia a idade e o sexo de 5 pessoas, mostrando no
+//final:
+//a) Quantos homens foram cadastrados
+//b) Quantas mulheres foram cadastradas
+//c) A média de idade do grupo
+//d) A média de idade dos homens
+//e) Quantas mulheres tem mais de 20 anos
