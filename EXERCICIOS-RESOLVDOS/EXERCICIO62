@@ -1,0 +1,41 @@
+algoritmo "semnome"
+var
+   cont , id , qid ,tid , id21: inteiro
+   resp : caractere
+   med: real
+inicio
+   cont <- 1
+   escreval("")
+   escreval(" CADASTRO DE IDADES “faça enquanto” ")
+   escreval(" _________________________________")
+   escreval("")
+   enquanto ( resp <> "N") faca
+      escreva(" IDADE",cont,"º PESSOA: ")
+      leia(id)
+      escreva("   DESEJA CONTINUAR[S/N]: ")
+      leia(resp)
+      tid <- tid + id
+      se (id >= 0 ) entao
+       qid <- qid + 1
+      fimse
+      se ( id >= 21 ) entao
+       id21 <- id21 + 1
+      fimse
+      cont <- cont + 1
+   fimenquanto
+   med <- tid / qid
+   escreval("")
+   escreval("------------------------------------------")
+   escreval(" QUANTIDADE DE IDADES CADASTRADAS: ",qid)
+   escreval(" MÉDIA DAS IDADES CADASTRADAS: ",int(med))
+   escreval(" PESSOAS COM 21 ANOS OU MASIS: ",id21)
+   escreval("------------------------------------------")
+fimalgoritmo
+
+//62) Faça um programa usando a estrutura “faça enquanto” que leia a idade de
+//várias pessoas. A cada laço, você deverá perguntar para o usuário se ele quer
+//ou não continuar a digitar dados. No final, quando o usuário decidir parar,
+//mostre na tela:
+//a) Quantas idades foram digitadas
+//b) Qual é a média entre as idades digitadas
+//c) Quantas pessoas tem 21 anos ou mais.
