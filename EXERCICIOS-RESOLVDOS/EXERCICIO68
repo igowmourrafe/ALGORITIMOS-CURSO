@@ -1,0 +1,45 @@
+algoritmo "semnome"
+var
+   cont , m ,kgh  : inteiro
+   sexo : caractere
+   kg ,mm, sm , mp: real
+inicio
+   mp <- 0
+   escreval("")
+   escreval(" '''''''''''''''''''''''''''''''''''''''''''")
+   escreval("  MULTIPLO CADASTRO DE PESSOAS PARA/FIMPARA ")
+   escreval(" '''''''''''''''''''''''''''''''''''''''''''")
+   escreval("")
+   para cont <- 1 ate 8 faca
+      escreval(cont,"º PESSOA")
+      escreva(" SEX0[M/F]: ")
+      leia(sexo)
+      escreva(" PESO (KG): ")
+      leia(kg)
+      se ( sexo = "F" ) entao
+         m <- m + 1
+         sm <- sm + kg
+      fimse
+      se ( sexo = "M" ) e ( kg > 100 ) entao
+         kgh <- kgh + 1
+      fimse
+      se ( sexo = "M" ) e ( kg > mp ) entao
+         mp <- KG
+      fimse
+   fimpara
+   mm <- sm /m
+   escreval("")
+   escreval(" '''''''''''''''''''''''''''''''''''''''''''")
+   escreval(" MULHERES CADASTRADAS: ",m)
+   escreval(" MULHERES PESO MÉDIO: ",mm)
+   escreval(" HOMENS COM MAIS DE 100KG: ",kgh)
+   escreval(" MAIOR PESO ENTRE OS HOMENS: ",mp)
+   escreval(" '''''''''''''''''''''''''''''''''''''''''''")
+fimalgoritmo
+
+//68) Crie um programa que leia sexo e peso de 8 pessoas, usando a estrutura
+//“para”. No final, mostre na tela:
+//a) Quantas mulheres foram cadastradas
+//b) Quantos homens pesam mais de 100Kg
+//c) A média de peso entre as mulheres
+//d) O maior peso entre os homens
