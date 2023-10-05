@@ -1,0 +1,30 @@
+algoritmo "semnome"
+var
+   cont ,id, qa , s: inteiro
+   med : real
+inicio
+   cont <- 1
+   escreval(" ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨")
+   escreval("        CADASTRO DE ALUNOS       ")
+   escreval(" ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨")
+   repita
+      escreva(" IDADE DO",cont,"º ALUNO: ")
+      leia(id)
+      s <- s + id
+      cont <- cont + 1
+      qa <- qa + 1
+   ate ( id = 999 )
+   s <- s - 999
+   qa <- qa - 1
+   med <- s / qa
+   escreval("")
+   escreval("¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨")
+   escreval(" QUANTIDADE DE ALUNOS CADASTRADOS: ",qa," ALUNOS")
+   escreval(" MEDIA DE IDADE DOS ALUNOS: ",int(med)," ANOS")
+   escreval("¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨")
+fimalgoritmo
+
+
+//58) Faça um algoritmo que leia a idade de vários alunos de uma turma. O programa
+//vai parar quando for digitada a idade 999. No final, mostre quantos alunos
+//existem na turma e qual é a média de idade do grupo
