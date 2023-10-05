@@ -1,0 +1,40 @@
+algoritmo "semnome"
+var
+   resp: caractere
+   sexo : inteiro
+   sal, th , tm  : real
+inicio
+   repita
+      escreval(" TOTALIZANDO SALÁRIOS DOS FUNCIONARIOS")
+      escreval(" _____________________________________")
+      escreval("")
+      escreval(" SEXO DO COLABORADOR: ")
+      escreval(" [1] - MASCULINO")
+      escreval(" [2] - FEMININO")
+      escreva(" DIGITE UMA OPÇÃO: ")
+      leia(sexo)
+      escreva(" SALÁRIO: ")
+      leia(sal)
+      escreval("")
+      escreva(" DESEJA CONTINUAR[S/N]: ")
+      leia(resp)
+      escolha(sexo)
+      caso 1
+         th <- th + sal
+      caso 2
+         tm <- tm + sal
+      fimescolha
+      limpatela
+   ate (resp = "N")
+   escreval("-----------------------------------")
+   escreval(" TOTAL DE SALÁRIOS: ")
+   escreval(" MASCULINO: ",th)
+   escreval(" FEMININO: ",tm)
+   escreval("-----------------------------------")
+
+fimalgoritmo
+
+//57) Desenvolva um aplicativo que leia o salário e o sexo de vários funcionários.
+//No final, mostre o total de salários pagos aos homens e o total pago às
+//mulheres. O programa vai perguntar ao usuário se ele quer continuar ou não
+//sempre que ler os dados de um funcionário.
