@@ -1,0 +1,30 @@
+algoritmo "semnome"
+var
+   cont , v1 , v2 , v3: inteiro
+inicio
+   v1 <- 0
+   v2 <- 1
+   v3 <- 1
+   escreval(" A SEQUÊNCIA DE FIBONACCI ")
+   escreval("__________________________________________________________")
+   escreval("")
+   escreval(" A SEQUÊNCIA DE FIBONACCI, OU SUCESSÃO DE FIBONACCI, É UMA")
+   escreval(" SEQUÊNCIA  MATEMATICA COMPOSTA POR NUMEROS INTEIROS. NOR-")
+   escreval(" ALMENTE, COMEÇA POR 0 E 1 E CADA TERMO SUBSEQUENTE É FOR-")
+   escreval(" MADO PELA SOMA DOS DOIS ANTERIORES.")
+   escreval("")
+   escreval(" OS 10 PRIMEIROS NUMEROS DA SEQUÊNCIA: ")
+   escreval("")
+   para cont <- 1 ate 10 faca
+      escreva(v3)
+      v3 <-  v1 + v2
+      V1 <- V2
+      V2 <- V3
+   fimpara
+   escreva("...")
+   escreval("")
+fimalgoritmo
+
+//70) [DESAFIO] Faça um programa que mostre os 10 primeiros elementos da
+//Sequência de Fibonacci:
+//1 1 2 3 5 8 13 21..
