@@ -1,0 +1,62 @@
+algoritmo "semnome"
+var
+   resp , nome , mv , mj: caractere
+   cont , id , sexo , md , mmj , s , somid , sup30 , id18: inteiro
+   med : real
+inicio
+   cont <- 1
+   escreva(" |__O_U_T_R_O_ - _C_A_D_A_S_T_R_O__| ")
+   escreval("")
+   repita
+      escreval("")
+      escreval("  - CADASTRO DA ",cont," º PESSOA - ")
+      escreval("")
+      escreva(" NOME: ")
+      leia(nome)
+      escreva(" IDADE: ")
+      leia(id)
+      escreval(" SEXO: ")
+      escreval(" [1] - MASCULINO | [2] - FEMININO")
+      escreva(" DIGITE UMA OPÇÃO: ")
+      leia(sexo)
+      escreva("   CONTINUAR [S/N]: ")
+      leia(resp)
+      cont <- cont + 1
+      se ( id >  md ) entao
+         md <- id
+         mv <- nome
+      fimse
+      escolha(sexo)
+      caso 1
+         se ( id > 30 ) entao
+            sup30 <- sup30 + 1
+         fimse
+      caso 2
+         se ( id < mmj ) ou ( mmj = 0 ) entao
+            mmj <- id
+            mj <-  nome
+         fimse
+         se ( id < 18 ) entao
+            id18 <- id18 + 1
+         fimse
+      fimescolha
+      somid <- somid + id
+   ate ( resp = "N" )
+   cont <- cont - 1
+   med <- somid / cont
+   escreval("................................................")
+   escreval(" PESSOA MAIS VELHA : ", mv)
+   escreval(" MULHER MAIS JOVEM : ", mj)
+   escreval(" MÉDIA DE IDADE : ",int(med)," ANOS")
+   escreval(" HOMENS COM IDADE SUPERIOR A 30 ANOS: ",sup30," HOMENS")
+   escreval(" MULHERES COM IDADE INFERIOR A 18 ANOS: ",id18," MULHERES")
+   escreval("................................................")
+fimalgoritmo
+
+//60) Desenvolva um algoritmo que leia o nome, a idade e o sexo de várias pessoas.
+//O programa vai perguntar se o usuário quer ou não continuar. No final, mostre:
+//a) O nome da pessoa mais velha
+//b) O nome da mulher mais jovem
+//c) A média de idade do grupo
+//d) Quantos homens tem mais de 30 anos
+//e) Quantas mulheres tem menos de 18 anos
