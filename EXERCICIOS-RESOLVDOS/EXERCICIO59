@@ -36,10 +36,10 @@ inicio
    escreval("")
    escreval(" RESULTADO DO CADSTRO DE ", cont,"º PESSOAS")
    escreval("===========================================")
-   escreval(" MAIOR IDADE: ",idm)
-   escreval(" HOMENS CADASTRADOS: ",hc)
-   escreval(" MULHER MAIS JOVEM: ",mmj)
-   escreval(" MÉDIA DE IDADE ENTRE HOMENS: ",int(medh))
+   escreval(" MAIOR IDADE: ",idm," ANOS")
+   escreval(" HOMENS CADASTRADOS: ",hc," HOMENS")
+   escreval(" MULHER MAIS JOVEM: ",mmj," ANOS")
+   escreval(" MÉDIA DE IDADE ENTRE HOMENS: ",int(medh)," ANOS")
    escreval("===========================================")
 fimalgoritmo
 
