@@ -1,0 +1,51 @@
+algoritmo "semnome"
+var
+   cont , id, idm , hc , mmj , s: inteiro
+   resp , sexo : caractere
+   medh : real
+inicio
+   cont <- 1
+    escreval("  ========================================")
+    escreval("  ========== C-A-D-A-S-T-R-O =============")
+    escreval("  ========================================")
+    escreval("")
+   repita
+      escreval(" ",cont,"º - CADASTRADO")
+      escreva(" SEXO : [M/F]: ")
+      leia(sexo)
+      escreva(" IDADE: ")
+      leia(id)
+      escreva("   DESEJA CONTINUAR [S/N]: ")
+      leia(resp)
+      se ( id > idm ) entao
+         idm <- id
+      fimse
+      se ( sexo = "M" ) entao
+         hc <- hc + 1
+         s <- s + id
+      fimse
+      se ( sexo = "F" ) entao
+         se ( id < mmj )ou ( mmj = 0 ) entao
+            mmj <- id
+         fimse
+      fimse
+      cont <- cont + 1
+   ate ( resp = "N")
+    cont <- cont - 1
+    medh <- s / hc
+   escreval("")
+   escreval(" RESULTADO DO CADSTRO DE ", cont,"º PESSOAS")
+   escreval("===========================================")
+   escreval(" MAIOR IDADE: ",idm)
+   escreval(" HOMENS CADASTRADOS: ",hc)
+   escreval(" MULHER MAIS JOVEM: ",mmj)
+   escreval(" MÉDIA DE IDADE ENTRE HOMENS: ",int(medh))
+   escreval("===========================================")
+fimalgoritmo
+
+//59) Crie um programa que leia o sexo e a idade de várias pessoas. O programa vai
+//perguntar se o usuário quer continuar ou não a cada pessoa. No final, mostre:
+//a) qual é a maior idade lida
+//b) quantos homens foram cadastrados
+//c) qual é a idade da mulher mais jovem
+//d) qual é a média de idade entre os homens
