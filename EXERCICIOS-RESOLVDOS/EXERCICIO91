@@ -1,0 +1,40 @@
+algoritmo "semnome"
+var
+   n1 , n2 , m: inteiro
+procedimento maior( var a, b : inteiro)
+inicio
+   se ( a > b ) entao
+      m <- a
+      escreva(" MAIOR NUMERO:")
+      escreval(m)
+      escreval(" VALOR A")
+   senao
+      se ( b > a ) entao
+         m <- b
+         escreva(" MAIOR NUMERO:")
+         escreval(m)
+         escreval(" VALOR B")
+      senao
+      fimse
+   fimse
+   se ( a = n2 ) entao
+      escreval("")
+      escreval(" OS DOIS VALORES SÃO IGUAIS")
+   fimse
+fimprocedimento
+inicio
+escreval(" V E R I F I C A N D O -  M A I O R  -  V A L O R ")
+   escreval("")
+   escreva(" DIGITE UM NUMERO PARA A: ")
+   leia(n1)
+   escreva(" DIGITE OUTRO NUMERO PARA B: ")
+   leia(n2)
+   escreval("")
+   maior(n1 , n2)
+   escreval("")
+fimalgoritmo
+
+//91) Desenvolva um algoritmo que leia dois valores pelo teclado e passe esses
+//valores para um procedimento Maior() que vai verificar qual deles é o maior e
+//mostrá-lo na tela. Caso os dois valores sejam iguais, mostrar uma mensagem
+//informando essa característica.
