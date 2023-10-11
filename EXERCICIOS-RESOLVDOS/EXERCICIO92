@@ -1,0 +1,27 @@
+algoritmo "semnome"
+var
+   n : inteiro
+procedimento ParouImpar( v : inteiro)
+inicio
+   se ( v % 2 = 0 ) entao
+      escreval(" ----------------------")
+      escreval(" O NUMERO",n," É PAR")
+      escreval(" ----------------------")
+   senao
+      escreval(" ----------------------")
+      escreval(" O NUMERO",n," É IMPAR")
+      escreval(" ----------------------")
+   fimse
+fimprocedimento
+inicio
+   escreval(" PAR OU IMPAR ? ")
+   escreval("_________________________________________")
+   escreval("")
+   escreva(" DIGITE UM NUMERO: ")
+   leia(n)
+   ParouImpar(n)
+fimalgoritmo
+
+//92) Crie uma lógica que leia um número inteiro e passe para um procedimento
+//ParOuImpar() que vai verificar e mostrar na tela se o valor passado como
+//parâmetro é PAR ou ÍM
