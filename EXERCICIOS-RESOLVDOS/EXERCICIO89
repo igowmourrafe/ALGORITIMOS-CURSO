@@ -1,0 +1,48 @@
+algoritmo "semnome"
+var
+   x : caractere
+   cont , bord : inteiro
+procedimento gerador (x : caractere)
+inicio
+   cont <- 1
+   escolha(bord)
+   caso 1
+      escreval(" +------=======-------+")
+      para cont <- 1 ate 4 faca
+         escreval("   APRENDENDO PORTUGOL  ")
+      fimpara
+      escreva(" +------=======-------+")
+   caso 2
+      escreval(" ~~~~~~~~:::::::~~~~~~~~")
+      para cont <- 1 ate 4 faca
+         escreval("   APRENDENDO PORTUGOL  ")
+      fimpara
+      escreva(" ~~~~~~~~:::::::~~~~~~~~~")
+   caso 3
+      escreval(" <<<<<<<------->>>>>>>>")
+      para cont <- 1 ate 4 faca
+         escreval("   APRENDENDO PORTUGOL  ")
+      fimpara
+      escreva(" <<<<<<<<------->>>>>>>>")
+   fimescolha
+fimprocedimento
+inicio
+   escreval(" ¨ BORDAS & BORDAS ¨")
+   escreval("")
+   escreval(" ESCOLHA UMA BORDA: ")
+   escreval(" [1]- +------=======------+")
+   escreval(" [2]- ~~~~~~~~:::::::~~~~~~~")
+   escreval(" [3]- <<<<<<<------->>>>>>>>")
+   escreval("")
+   escreva(" DIGITE UMA OPÇÃO: ")
+   leia(bord)
+   escreval("")
+   gerador(x)
+   escreval("")
+fimalgoritmo
+
+//89) Crie um programa que melhore o procedimento Gerador() da questão
+//anterior para que o programador possa escolher uma entre três bordas:
+// +- -----=======------+ Borda 1
+// ~~~~~~~~:::::::~~~~~~~ Borda 2
+// <<<<<<<<------->>>>>>> Borda 3
