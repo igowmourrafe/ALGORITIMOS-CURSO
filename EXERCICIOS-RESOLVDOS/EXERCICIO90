@@ -1,0 +1,25 @@
+algoritmo "semnome"
+var
+   n1 , n2 , somar : inteiro
+procedimento somar(a , b : inteiro )
+inicio
+   escreval(" VALOR DE A: ",n1)
+   escreval(" VALOR DE B: ",n2)
+   escreval("")
+   escrevaL(" A SOMA ENTRE OS DOIS:",a + b)
+fimprocedimento
+inicio
+   escreval("  -> SOMANDO VALORES POR PROCEDIMENTOS <- ")
+   escreval(" -----------------------------------------")
+   escreval("")
+   escreva(" DIGITE UM NUMERO : ")
+   leia(n1)
+   escreva(" DIGITE OUTRO NUMERO : ")
+   leia(n2)
+   escreval("")
+   somar(n1 , n2)
+fimalgoritmo
+
+//90) Desenvolva um algoritmo que leia dois valores pelo teclado e passe esses
+//valores para um procedimento Somador() que vai calcular e mostrar a soma entre
+//eles.
