@@ -1,0 +1,26 @@
+algoritmo "semnome"
+var
+   n1 , n2 , med : real
+funcao media( a, b : real): real
+var
+   m: real
+inicio
+   m <- (a + b) / 2
+   retorne m
+fimfuncao
+inicio
+   escreval(" =-- ALUNO ZECA TATU  LIMA --= ")
+   escreval("")
+   escreva(" NOTA 1: ")
+   leia(n1)
+   escreva(" NOTA 2: ")
+   leia(n2)
+   med <- media(n1,n2)
+   escreval("")
+   escreval(" -----=======-----")
+   escreval("  MÉDIA:",med:5:1)
+   escreval(" -----=======-----")
+fimalgoritmo
+
+//96) Crie um programa que tenha uma função Media(), que vai receber as
+//2 notas deum aluno e retornar a sua média para o programa principal.
