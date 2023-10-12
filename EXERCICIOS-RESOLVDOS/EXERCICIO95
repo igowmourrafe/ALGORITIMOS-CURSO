@@ -1,0 +1,23 @@
+algoritmo "semnome"
+var
+   n1 , n2 , s: inteiro
+funcao somar(a , b : inteiro ): inteiro
+inicio
+   retorne a + b
+fimfuncao
+inicio
+   escreval("  ->    SOMANDO VALORES POR FUNÇÃO     <- ")
+   escreval(" -----------------------------------------")
+   escreval("")
+   escreva(" DIGITE UM NUMERO : ")
+   leia(n1)
+   escreva(" DIGITE OUTRO NUMERO : ")
+   leia(n2)
+   escreval("")
+   s <- somar(n1 , n2)
+   escrevaL(" A SOMA ENTRE OS DOIS:",s)
+fimalgoritmo
+
+//95) Refaça o exercício 90, só que agora em forma de função Somador(), que vai
+//receber dois parâmetros e vai retornar o resultado da soma entre eles para o
+//programa principal.
