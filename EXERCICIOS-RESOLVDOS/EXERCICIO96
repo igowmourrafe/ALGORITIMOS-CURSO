@@ -2,11 +2,8 @@ algoritmo "semnome"
 var
    n1 , n2 , med : real
 funcao media( a, b : real): real
-var
-   m: real
 inicio
-   m <- (a + b) / 2
-   retorne m
+   retorne (a + b) / 2
 fimfuncao
 inicio
    escreval(" =-- ALUNO ZECA TATU  LIMA --= ")
