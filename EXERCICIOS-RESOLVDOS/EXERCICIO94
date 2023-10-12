@@ -1,0 +1,38 @@
+algoritmo "semnome"
+var
+   n : inteiro
+procedimento fibonacci()
+var
+   v1 , v2 , v3 , cont : inteiro
+inicio
+   v1 <- 0
+   v2 <- 1
+   v3 <- 1
+   para cont <- 1 ate n faca
+      escreva(v3)
+      escreva(" >> ")
+      v3 <-  v1 + v2
+      V1 <- V2
+      V2 <- V3
+   fimpara
+fimprocedimento
+inicio
+   escreval(" [DESAFIO] FIBONACCI ")
+   escreval("¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨")
+   escreval("")
+   escreva(" FIBONACCI DE: ")
+   leia(n)
+   escreval("")
+   fibonacci()
+   escreva(" FIM")
+   escreval("")
+fimalgoritmo
+
+//94) [DESAFIO] Desenvolva um aplicativo que tenha um procedimento chamado
+//Fibonacci() que recebe um único valor inteiro como parâmetro, indicando
+//quantos termos da sequência serão mostrados na tela. O seu procedimento deve
+//receber esse valor e mostrar a quantidade de elementos solicitados.
+//Obs: Use os exercícios 70 e 75 para te ajudar na solução
+//Ex:
+//Fibonacci(5) vai gerar 1 >> 1 >> 2 >> 3 >> 5 >> FIM
+//Fibonacci(9) vai gerar 1 >> 1 >> 2 >> 3 >> 5 >> 8 >> 13 >> 21 >> 34 >> FIM
