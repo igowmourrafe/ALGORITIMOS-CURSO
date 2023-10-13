@@ -1,0 +1,25 @@
+algoritmo "semnome"
+var
+   n1 , m , c: inteiro
+funcao maior( var a: inteiro) : inteiro
+inicio
+   se (n1 > m) entao
+      m <- n1
+      retorne m
+   fimse
+fimfuncao
+inicio
+   escreval(" V E R I F I C A N D O -  M A I O R  -  V A L O R ")
+   escreval("")
+   para c <- 1 ate 3 faca
+      escreva(" DIGITE ",c,"º  NUMERO: ")
+      leia(n1)
+      m <- maior(n1)
+   fimpara
+   escreval("")
+   escreval(" MAIOR NUMERO: ",m)
+fimalgoritmo
+
+//97) Refaça o exercício 91, só que agora em forma de função Maior(), mas faça uma
+//adaptação que vai receber TRÊS números como parâmetro e vai retornar qual foi o
+//maior entre eles.
