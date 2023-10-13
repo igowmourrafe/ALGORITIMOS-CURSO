@@ -1,0 +1,36 @@
+algoritmo "semnome"
+var
+   n1 , n2 , soma: inteiro
+funcao supersomador( var a , b : inteiro ) : inteiro
+var
+   c  , soma : inteiro
+inicio
+   para c <- a ate b passo 1 faca
+      soma <- soma + c
+      escreva(c)
+      retorne soma
+   fimpara
+fimfuncao
+inicio
+   escreval("")
+   escreval(" S/U/P/E/R  S/O/M/A/D/O/R")
+   escreval(" ........................")
+   escreval("")
+   escreva(" DIGITE UM NUMERO PARA INICIAR: ")
+   leia(n1)
+   escreva(" ATÉ: ")
+   leia(n2)
+   escreval("")
+   escreval(" SuperSomador(",n1," ,",n2," )")
+   escreval("")
+   soma <- supersomador(n1,n2)
+   escreva(" = ",soma)
+   escreval("")
+fimalgoritmo
+
+//98) Crie um programa que tenha uma função SuperSomador(), que vai receber dois
+//números como parâmetro e depois vai retornar a soma de todos os valores no
+//intervalo entre os valores recebidos.
+//Ex:
+//SuperSomador(1, 6) vai somar 1 + 2 + 3 + 4 + 5 + 6 e vai retornar 21
+//SuperSomador(15, 19) vai somar 15 + 16 + 17 + 18 + 19 e vai retornar 85
