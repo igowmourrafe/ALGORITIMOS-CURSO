@@ -1,0 +1,24 @@
+algoritmo "semnome"
+var
+   n1 , n2 , res : real
+ funcao potencial( a , b : real) : real
+ inicio
+  retorne a ^ b
+ fimfuncao
+inicio
+   escreval(" - E X P O N E N Ç I A N D O  N U M E R O S -")
+   escreval("")
+   escreva(" ESCREVA UM NUMERO: ")
+   leia(n1)
+   escreva(" EXPONENCIAÇÃO: ")
+   leia(n2)
+   res <- potencial(n1,n2)
+   escreval("")
+   escreva(" RESULTADO: ",res)
+   escreval("")
+fimalgoritmo
+
+//99) Faça um programa que possua uma função chamada Potencia(), que vai receber
+//dois parâmetros numéricos (base e expoente) e vai calcular o resultado da
+//exponenciação.
+//Ex: Potencia(5,2) vai calcular 52 = 25
