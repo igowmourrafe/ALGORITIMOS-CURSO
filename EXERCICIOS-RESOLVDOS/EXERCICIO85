@@ -1,0 +1,33 @@
+algoritmo "semnome"
+var
+   nome : vetor[1..5] de caractere
+   sexo : vetor[1..5] de caractere
+   sal : vetor[1..5] de real
+   c : inteiro
+inicio
+  escreval(" ...............................................")
+  escreval("  C A D A S T R O  D E  F U N C I O N A R I O S ")
+  escreval(" ...............................................")
+  escreval("")
+   para c <- 1 ate 5 faca
+      escreval("",c,"º  FUNCIONARIO(A)")
+      escreva(" NOME: ")
+      leia(nome[c])
+      escreva(" SEXO: [M]- MASCULINO | [F]- FEMININO: ")
+      leia(sexo[c])
+      escreva(" SALÁRIO: ")
+      leia(sal[c])
+   fimpara
+   escreval(" MULHERES COM SALÁRIOS MAIOR QUE 5K :")
+   escreval(" ====================================")
+   para c <- 1 ate 5 faca
+      se ( sexo[C] = "F") e ( sal[C] > 5000) entao
+         escreval(" ",c," - ",nome[c])
+      fimse
+   fimpara
+   escreval(" ------------------------------------")
+fimalgoritmo
+
+//85) Faça um algoritmo que leia o nome, o sexo e o salário de 5 funcionários e
+//guarde esses dados em três vetores. No final, mostre uma listagem contendo
+//apenas os dados das funcionárias mulheres que ganham mais de R$5 mil.
