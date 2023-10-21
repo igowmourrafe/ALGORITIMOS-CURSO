@@ -1,0 +1,28 @@
+algoritmo "semnome"
+var
+   n: vetor[1..15] de inteiro
+   a,b,d ,cont :inteiro
+inicio
+   a <- 0
+   b <- 1
+   d <- 1
+   escreval(" SEQUENÇIA FIBONACCI: ")
+   escreval("")
+   para cont <- 1 ate 15 faca
+      d <- a + b
+      a <- b
+      b <- d
+      escreva(" ",d)
+      n[cont] <- d
+   fimpara
+   escreval("")
+   escreval("  1º 2º 3º 4º 5º 6º  7º  8º  9º  10º  11º 12º  13º  14º  15º ")
+   escreval(" ________________________________________________________")
+   escreval("")
+   escreval(" ACIMA ESTÃO OS 15 PRIMEIROS NUMEROS FIBONACCI EM POSIÇÃO ")
+fimalgoritmo
+
+//75) Crie um programa que preencha automaticamente (usando lógica, não apenas
+//atribuindo diretamente) um vetor numérico com 15 posições com os primeiros
+//elementos da sequência de Fibonacci:
+//1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987
