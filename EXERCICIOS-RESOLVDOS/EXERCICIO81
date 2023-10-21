@@ -1,0 +1,42 @@
+algoritmo "semnome"
+var
+   id : vetor[1..8] de inteiro
+   c , M ,P : inteiro
+   med , media: real
+inicio
+   escreval(" [CADASTRO DE IDADES]  ")
+   escreval(" -  -  -  -  -  -  -  -  -  -  -   -  -")
+   para c <- 1 ate 8 faca
+      escreva(" IDADE DA",c,"º PESSOA: ")
+      leia(id[c])
+   fimpara
+   para c <- 1 ate 8 faca
+      med <- med + id[c]
+      se ( id[c] > M ) entao
+         M <- id[c]
+         P <- c
+      fimse
+   fimpara
+   media <- med / 8
+   escreval("")
+   escreval(" -  R E S U L T A D O   A P U R A D O - ")
+   escreval(" -  -  -  -  -  -  -  -  -  -  -   -  -")
+   escreval("")
+   escreval(" MÉDIA DE IDADE: ",int(media)," ANOS")
+   escreval(" MAIOR IDADE DIGITADA:",M," ANOS")
+   escreval(" MAIOR IDADE DIGITADA NA POSIÇÃO :",P)
+   escreval(" IDADE SUPERIOR A 25 ANOS NA POSIÇÃO:")
+   para c <- 1 ate 8 faca
+      se (id[c] > 25) entao
+         escreval(" POSICÃO ",c)
+      fimse
+   fimpara
+   escreval(" -  -  -  -  -  -  -  -  -  -  -   -  -")
+fimalgoritmo
+
+//81) Crie um programa que leia a idade de 8 pessoas e guarde-as em um vetor.
+//Nofinal, mostre:
+//a ) Qual é a média de idade das pessoas cadastradas
+//b) Em quais posições temos pessoas com mais de 25 anos
+//c) Qual foi a maior idade digitada (podem haver repetições)
+//d) Em que posições digitamos a maior idade
