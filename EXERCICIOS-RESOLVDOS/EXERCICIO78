@@ -1,0 +1,33 @@
+algoritmo "semnome"
+var
+   num : vetor[1..15] de inteiro
+   c : inteiro
+inicio
+   para c <- 1 ate 15 faca
+      escreval(" V | E | T | O | R | E | S ")
+      escreval("")
+      escreva(" NUMERO",c,": ")
+      leia(num[c])
+      limpatela
+   fimpara
+   escreval(" V | E | T | O | R | E | S ")
+   escreval("")
+   escreval(" ----------------------------------------------------")
+   para c <- 1 ate 15 faca
+      escreva(num[c])
+   fimpara
+   escreval("")
+   escreval(" ----------------------------------------------------")
+   escreval("")
+   escreval(" MULTIPLOS DE 10: ")
+   escreval("")
+   para c <- 1 ate 15 faca
+      se( num[c] % 10 = 0 ) entao
+         escreval(" NÚMERO",num[c]," --> POSIÇÃO ",c)
+      fimse
+   fimpara
+fimalgoritmo
+
+//78) Escreva um programa que leia 15 números e guarde-os em um vetor. No final,
+//mostre o vetor inteiro na tela e em seguida mostre em que posições foram
+//digitados valores que são múltiplos de 10.
