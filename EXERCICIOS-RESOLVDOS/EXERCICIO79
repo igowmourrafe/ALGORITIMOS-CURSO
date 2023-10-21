@@ -1,0 +1,26 @@
+algoritmo "semnome"
+var
+   num: vetor[1..10] de inteiro
+   c : inteiro
+inicio
+   escreval(" |    V E R I F I C A N D O  N U M E R O S  P A R E S     |")
+   escreval(" ---------------------------------------------------------")
+   para c <- 1 ate 10 faca
+      escreva(" NUMERO",c,": ")
+      leia(num[c])
+   fimpara
+   limpatela
+   escreval("")
+   escreval(" |   R E S U L T A D O   D O S   P A R E S   |")
+   escreval(" ---------------------------------------------")
+   para c <- 1 ate 10 faca
+      se ( num[c] % 2 = 0 ) entao
+         escreval(" NUMERO",num[c], " É PAR E ESTA NA POSIÇÃO ",c)
+         escreval(" ---------------------------------------------")
+      fimse
+   fimpara
+fimalgoritmo
+
+//79) Desenvolva um programa que leia 10 números inteiros e guarde-os em um vetor.
+//No final, mostre quais são os números pares que foram digitados e em que
+//posições eles estão armazenados.
