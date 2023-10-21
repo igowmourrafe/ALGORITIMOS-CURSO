@@ -1,0 +1,49 @@
+algoritmo "semnome"
+var
+   nome: vetor[1..10] de caractere
+   n : vetor[1..10] de real
+   c , p : inteiro
+   med , M , mt , mturma: real
+inicio
+   para c <- 1 ate 10 faca
+      escreval("  ___________________________________")
+      escreval(" |                                   |")
+      escreval(" |   CADASTRO DE ANUNOS DO E NOTAS   |")
+      escreval(" |___________________________________|")
+      escreval("")
+      escreval("",c,"º  ALUNO(A)")
+      escreva("  NOME: ")
+      leia(nome[c])
+      escreva("  NOTA: ")
+      leia(n[c])
+      limpatela
+   fimpara
+   para c <- 1 ate 10 faca
+      mt <- mt + n[c]
+      se (n[c] > 5) entao
+         med <- med + 1
+      fimse
+      se (n[c] > M ) entao
+         M <- n[c]
+        p <- c
+      fimse
+   fimpara
+   mturma <- mt / 10
+   escreval("  ___________________________________")
+   escreval(" |                                   |")
+   escreval(" | R / E / S / U / L / T / A / D / O |")
+   escreval(" |___________________________________|")
+   escreval("")
+   escreval(" ALUNOOS ACIMA DA MEDIA: ",med)
+   escreval(" MAIOR NOTA: ",M)
+   escreval(" MÉDIA DA TURMA: ",mturma)
+   escreval(" MAIOR NOTA NA POSIÇÃO : ",p)
+   escreval(" _____________________________________")
+fimalgoritmo
+
+//82) Faça um algoritmo que leia a nota de 10 alunos de uma turma e guarde-as
+//em um vetor. No final, mostre:
+//a) Qual é a média da turma
+//b) Quantos alunos estão acima da média da turma
+//c) Qual foi a maior nota digitada
+//d) Em que posições a maior nota aparece
