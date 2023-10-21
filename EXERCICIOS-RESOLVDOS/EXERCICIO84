@@ -1,0 +1,33 @@
+algoritmo "semnome"
+var
+   nome: vetor[1..9] de caractere
+   id : vetor[1..9] de real
+   cont : inteiro
+inicio
+   para cont <- 1 ate 9 faca
+      escreval(" C || A || D || A || S || T || R || O  ")
+      escreval("")
+      escreval("",cont,"º PESSOA")
+      escreva(" NOME: ")
+      leia(nome[cont])
+      escreva(" IDADE: ")
+      leia(id[cont])
+      escreval("")
+      limpatela
+   fimpara
+   escreval("")
+   escreval(" R || E || S || U || L || T || A || D || O ")
+   escreval("")
+   escreval(" LISTAGEM DE PESSOAS MENORES DE IDADE")
+   escreval(" ....................................")
+   para cont <- 1 ate 9 faca
+      se (id[cont] < 18) entao
+         escreval(" ",nome[cont])
+      fimse
+   fimpara
+   escreval(" ....................................")
+fimalgoritmo
+
+//84) Crie um programa que leia o nome e a idade de 9 pessoas e guarde esses
+//valores em dois vetores, em posições relacionadas. No final, mostre uma listagem
+//contendo apenas os dados das pessoas menores de idade.
