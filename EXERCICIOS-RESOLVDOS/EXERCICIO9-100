@@ -1,0 +1,40 @@
+algoritmo "semnome"
+var
+   n1 , n2 , med : real
+   res : caractere
+funcao media( a, b : real): real
+inicio
+   retorne (a + b) / 2
+fimfuncao
+funcao situacao() : caractere
+inicio
+   se (med > 6 ) entao
+      retorne "  APROVADO"
+   senao
+      se (med > 5) e (med <=6) entao
+         retorne "  RECUPERAÇÃO"
+      senao
+         retorne "  REPROVADO"
+      fimse
+   fimse
+fimfuncao
+inicio
+   escreval(" =-- ALUNO ZECA TATU  LIMA --= ")
+   escreval("")
+   escreva(" NOTA 1: ")
+   leia(n1)
+   escreva(" NOTA 2: ")
+   leia(n2)
+   med <- media(n1,n2)
+   res <- situacao()
+   escreval("")
+   escreval(" -----=======-----")
+   escreval("  MÉDIA:",med:5:1)
+   escreval(res)
+   escreval(" -----=======-----")
+fimalgoritmo
+
+//100) Melhore o exercício 96, criando além da função Media() uma outra função
+//chamada Situacao(), que vai retornar para o programa principal se o aluno está
+//APROVADO, em RECUPERAÇÃO ou REPROVADO. Essa nova função, vai receber como
+//parâmetro o resultado retornado pela função Media(
