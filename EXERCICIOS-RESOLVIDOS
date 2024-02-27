@@ -1,6 +1,0 @@
-algoritmo "Olá Mundo"
-var
-
-inicio
-escreval("Olá Mundo.")
-fimalgoritmo
